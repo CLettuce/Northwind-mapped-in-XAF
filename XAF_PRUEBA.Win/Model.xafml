@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo">
+  <NavigationItems NavigationStyle="Accordion" DefaultChildItemsDisplayStyle="List" />
+  <Options UIType="TabbedMDI" FormStyle="Ribbon" />
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="24.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Employees_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="90.76923076923077">
+            <LayoutGroup Id="Employees">
+              <LayoutGroup Id="Employees_col1" RelativeSize="49.810844892812106">
+                <LayoutItem Id="EmployeeID" RelativeSize="6.504065040650406" />
+                <LayoutItem Id="FirstName" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="LastName" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="Title" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="TitleOfCourtesy" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="BirthDay" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="HireDay" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="Address" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="City" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="Notes" ViewItem="Notes" SizeConstraintsType="Custom" MinSize="111, 65" Index="9" RelativeSize="54.47154471544715" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employees_col2" RelativeSize="50.189155107187894">
+                <LayoutItem Id="Photo" RelativeSize="64.22764227642277" Index="0" MinSize="398, 212" MaxSize="398, 212" SizeConstraintsType="Default" />
+                <LayoutItem Id="Region" RelativeSize="4.878048780487805" Index="1" />
+                <LayoutItem Id="PostalCode" RelativeSize="4.878048780487805" Index="2" />
+                <LayoutItem Id="Country" RelativeSize="4.878048780487805" Index="3" />
+                <LayoutItem Id="HomePhone" RelativeSize="4.878048780487805" Index="4" />
+                <LayoutItem Id="Extension" RelativeSize="4.878048780487805" Index="5" />
+                <LayoutItem Id="ReportsTo" RelativeSize="4.878048780487805" />
+                <LayoutItem Id="PhotoPath" RelativeSize="6.504065040650406" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="9.23076923076923" Caption="Notes">
+            <LayoutItem Id="Notes" SizeConstraintsType="Custom" MinSize="111, 65" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

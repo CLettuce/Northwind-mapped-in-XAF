@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="XAF_PRUEBA">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="24.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="24.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Employees_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="45.81196581196581">
+            <LayoutGroup Id="Employees" RelativeSize="100">
+              <LayoutGroup Id="Employees_col1" RelativeSize="50">
+                <LayoutItem Id="EmployeeID" RelativeSize="13.793103448275861" />
+                <LayoutItem Id="FirstName" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="LastName" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="Title" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="TitleOfCourtesy" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="BirthDay" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="HireDay" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="Address" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="City" RelativeSize="13.793103448275861" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employees_col2" RelativeSize="50">
+                <LayoutItem Id="Region" RelativeSize="13.793103448275861" />
+                <LayoutItem Id="PostalCode" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="Country" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="HomePhone" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="Extension" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="Photo" ViewItem="Photo" Index="5" RelativeSize="20.689655172413794" ShowCaption="False" SizeConstraintsType="Custom" MinSize="155, 24" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="ReportsTo" Index="6" RelativeSize="10.344827586206897" />
+                <LayoutItem Id="PhotoPath" Index="7" RelativeSize="13.793103448275861" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="54.18803418803419">
+            <LayoutItem Id="Notes" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
